@@ -1,10 +1,8 @@
 import React from 'react';
-import Search from '../../components/Search/Search.js';
-import { Results } from '../../components/Results/Results.js';
+import { ResultsContainer } from '../../components/Results/ResultsContainer';
 
 export const Homepage = () => (
   <div className='container'>
-    <Search />
-    <Results />
+    <ResultsContainer />
   </div>
 )

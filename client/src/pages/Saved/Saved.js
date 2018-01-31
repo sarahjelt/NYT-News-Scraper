@@ -1,3 +1,9 @@
 import React from 'react';
+import { SavedArts } from '../../components/SavedArts/SavedArts.js';
+import { FormBtn } from '../../components/Search/FormBtn.js';
 
-export const Saved = () => <h1>Here be Saved Articles!</h1>;
+export const Saved = () => (
+  <div className='container'>
+    <SavedArts />
+  </div>
+);
