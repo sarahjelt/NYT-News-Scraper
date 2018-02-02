@@ -1,6 +1,5 @@
 import React from 'react';
 import { FormBtn } from '../Search/FormBtn.js';
-// import { Article } from './Article';
 
 export const Results = props =>
   <div className='row'>
@@ -18,11 +17,11 @@ export const Results = props =>
           </div>
           <div className='col s3'>
             <FormBtn 
-              name={props.butto === "Save" ? "Save" : "Saved!"} 
+              name='Save' 
               id={result._id}
               onClick={(data) => props.saveArticle({ headline: result.headline.main, 
                 date: result.pub_date, 
-                url: result.web_url}).then(setState({button: "Saved!"}))}
+                url: result.web_url})}
             />
           </div>
         </div>
