@@ -46,10 +46,7 @@ export class ResultsContainer extends React.Component {
   }
 
   saveArticle = data => {
-    // this.setState({ button: "Saved!"});
-
     API.saveArticle(data)
-      .then(console.log('ok???'))
       .catch(err => console.log(err));
   }
 
